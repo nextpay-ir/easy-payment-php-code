@@ -5,7 +5,7 @@ include '../config.php';
 include_once "../include/init.php";
 include './loginchk.php';
 
-$res=mysql_query("select * from `order` order by id desc limit 500;");
+$res=$mysqli->query("select * from `order` order by id desc limit 500;");
 if($res && mysql_num_rows($res)>0){
 	?>
 	<table cellspacing="3" width="850" dir="rtl" align="center" class="search">
@@ -19,7 +19,7 @@ if($res && mysql_num_rows($res)>0){
 	<th>تاریخ</th>
 	</tr>
 	<?php
-	while($row=mysql_fetch_assoc($res)){
+	while($row=mysqli_fetch_assoc($res)){
 		echo "<tr>";
 		echo "<td>$row[name]</td>";
 		echo "<td>$row[email]</td>";		

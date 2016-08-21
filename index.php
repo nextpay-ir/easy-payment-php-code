@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="script" content="http://www.maker.ir" />
-<meta name="copyright" content="Ali Karimabadi - akarimabadi@gmail.com" />		
-<title>آسان پرداز</title>
+<meta name="script" content="http://www.nextpay.ir" />
+<meta name="copyright" content="FreezeMan - freezeman.0098@gmail.com" />
+<title>آسان پرداخت نکست پی</title>
 <style media="all" type="text/css">
 <!--
 body {
@@ -86,4 +86,4 @@ a{text-decoration:none}
     </div>
 </div>
 </body></html>
-<p style="text-align: center;">قدرت گرفته از سامانه پرداخت الکترونیک <a href="http://www.dargahbank.ir" target="_blank">درگاه بانک</a></p>
+<p style="text-align: center;">قدرت گرفته از سامانه پرداخت الکترونیک <a href="http://www.nextpay.ir" target="_blank">نکست پی</a></p>
