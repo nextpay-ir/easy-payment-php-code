@@ -1,7 +1,7 @@
 <?php
-include_once './config.php';
-include_once './include/init.php';
-include_once './include/nextpay_payment.php';
+include_once dirname(__FILE__).'/config.php';
+include_once dirname(__FILE__).'/include/init.php';
+include_once dirname(__FILE__).'/include/nextpay_payment.php';
 
 // validate inputs
 if(isset($_POST['product']) && $_POST['product'] != '-1'){
@@ -47,7 +47,7 @@ if(isset($_POST['product']) && $_POST['product'] != '-1'){
 	
 try {
 	$mysqli->query("INSERT INTO `order` (`email` ,`tel` ,`name`,`comment` ,`amount` ,`status` ,`ref` ,`date`) VALUES ('{$_POST['TxtEmail']}', '{$_POST['TxtMobile']}','{$_POST['TxtName']}','{$_POST['TxtTitle']}','{$price}', 'n', '','".time()."');");
-	echo mysqli_error();
+	echo mysqli_error($mysqli);
 	$order_id=mysqli_insert_id($mysqli);
 	if($order_id<=0){echo 'خطا در ایجاد سفارش .';exit;}
 	
@@ -56,7 +56,7 @@ try {
 	"api_key"=>$api_key,
 	"order_id"=> $order_id,
 	"amount"=>$price,
-	"callback_uri"=>$site_url.'/back.php');
+	"callback_uri"=>$site_url.'back.php');
 	
 	$nextpay = new Nextpay_Payment($parameters);
 	//$nextpay->setDefaultVerify(Type_Verify::Http);

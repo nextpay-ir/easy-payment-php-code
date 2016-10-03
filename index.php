@@ -1,6 +1,6 @@
 <?php
-include_once ('config.php');
-include_once ('include/init.php');
+include_once (dirname(__FILE__).'/config.php');
+include_once (dirname(__FILE__).'/include/init.php');
 
 $result = mysqli_query($mysqli, "SELECT * FROM `product`");
 
