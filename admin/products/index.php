@@ -1,9 +1,9 @@
 <?php
 // error_reporting(0);
 ob_start();
-include_once ('../../config.php');
-include_once ('../../include/init.php');
-include_once ('../loginchk.php');
+include_once (dirname(__FILE__).'/../../config.php');
+include_once (dirname(__FILE__).'/../../include/init.php');
+include_once (dirname(__FILE__).'/../loginchk.php');
 
 $res = mysqli_query($mysqli, "SELECT * FROM `product` ORDER BY id DESC");
 
@@ -33,4 +33,4 @@ $res = mysqli_query($mysqli, "SELECT * FROM `product` ORDER BY id DESC");
 		?>
 	</table>
 </div>
-<?php $out_html = ob_get_clean(); include_once ('../dashboard.php');?>
+<?php $out_html = ob_get_clean(); include_once (dirname(__FILE__).'/../dashboard.php');?>

@@ -1,9 +1,9 @@
 <?php
 // error_reporting(0);
 ob_start();
-include (__DIR__.'/../../config.php');
-include_once (__DIR__.'/../../include/init.php');
-include (__DIR__.'/../loginchk.php');
+include (dirname(__FILE__).'/../../config.php');
+include_once (dirname(__FILE__).'/../../include/init.php');
+include (dirname(__FILE__).'/../loginchk.php');
 
 
 if(isset($_POST['update']))
@@ -78,4 +78,4 @@ while($res = mysqli_fetch_array($result))
 </div>
 
 
-<?php $out_html = ob_get_clean(); include_once (__DIR__.'/../dashboard.php');?>
+<?php $out_html = ob_get_clean(); include_once (dirname(__FILE__).'/../dashboard.php');?>

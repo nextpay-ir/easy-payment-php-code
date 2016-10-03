@@ -1,7 +1,7 @@
 <?php
 // error_reporting(0);
-include_once (__DIR__.'/../config.php');
-include_once (__DIR__.'/../include/init.php');
+include_once (dirname(__FILE__).'/../config.php');
+include_once (dirname(__FILE__).'/../include/init.php');
 session_start();
 global $admin_user,$admin_pass;
 if($_SESSION['Isloggedin']==false){

@@ -1,9 +1,9 @@
 <?php
 // error_reporting(0);
 ob_start();
-include (__DIR__.'/../../config.php');
-include_once (__DIR__.'/../../include/init.php');
-include (__DIR__.'/../loginchk.php');
+include (dirname(__FILE__).'/../../config.php');
+include_once (dirname(__FILE__).'/../../include/init.php');
+include (dirname(__FILE__).'/../loginchk.php');
 
 //getting id of the data from url
 $id = $_GET['id'];

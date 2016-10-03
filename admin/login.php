@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
-include_once ('../config.php');
-include_once ('../include/init.php');
+include_once (dirname(__FILE__).'/../config.php');
+include_once (dirname(__FILE__).'/../include/init.php');
 
 global $admin_user,$admin_pass;
 $userpass=$_POST['password'];

@@ -2,9 +2,9 @@
 <?php
 // error_reporting(0);
 ob_start();
-include_once ('../../config.php');
-include_once ('../../include/init.php');
-include_once ('../loginchk.php');
+include_once (dirname(__FILE__).'/../../config.php');
+include_once (dirname(__FILE__).'/../../include/init.php');
+include_once (dirname(__FILE__).'/../loginchk.php');
 
 if(isset($_POST['submit'])) {
 	$name = $_POST['name'];
@@ -62,4 +62,4 @@ if(isset($_POST['submit'])) {
 	</div>
 	<?php } ?>
 
-	<?php $out_html = ob_get_clean(); include_once ('../dashboard.php');?>
+	<?php $out_html = ob_get_clean(); include_once (dirname(__FILE__).'/../dashboard.php');?>

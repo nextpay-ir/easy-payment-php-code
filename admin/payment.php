@@ -1,9 +1,9 @@
 <?php
 error_reporting(0);
 ob_start();
-include ('../config.php');
-include_once ('../include/init.php');
-include ('loginchk.php');
+include (dirname(__FILE__).'/../config.php');
+include_once (dirname(__FILE__).'/../include/init.php');
+include (dirname(__FILE__).'/loginchk.php');
 
 $res = mysqli_query($mysqli, "SELECT * FROM `order` ORDER BY id DESC LIMIT 500");
 
