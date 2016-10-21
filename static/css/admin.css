@@ -171,6 +171,10 @@ html , body{
  .side-body {
  	margin-left: 310px;
  }
+ .content {
+  height: 90%;
+  overflow: scroll;
+ }
  /* small screen */
  @media (max-width: 768px) {
  	.side-menu {
