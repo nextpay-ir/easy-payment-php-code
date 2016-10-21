@@ -56,8 +56,8 @@
 			</p>
 		</footer>
 	</div>
-	<script type="text/javascript" src="<?php echo $site_url; ?>/static/js/bootstrap.js"></script><!-- Bootstrap Js -->
 	<script type="text/javascript" src="<?php echo $site_url; ?>/static/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="<?php echo $site_url; ?>/static/js/bootstrap.js"></script><!-- Bootstrap Js -->
 
 	</body>
 </html>
