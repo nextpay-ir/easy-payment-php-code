@@ -14,9 +14,10 @@
 
 		if (id > -1){
 			var amount = $('option:selected', this).attr('amount');
+			var desc = $('option:selected', this).attr('desc');
 			$('#order_total').html((Math.ceil(amount)));
 			$('input[name=TxtPrice]:text').hide();
-			$('textarea[name=TxtTitle]').val('مصحول کد :' + id + ' | قیمت ' + amount );
+			$('textarea[name=TxtTitle]').val('کد محصول :' + id + ' | قیمت ' + amount + '\n توضیحات :' + desc)
 		}else {
 			$('#order_total').html((Math.ceil($('input[name=TxtPrice]:text').val())));
 			$('input[name=TxtPrice]:text').show();

@@ -5,6 +5,7 @@
 <meta charset="utf-8" />
 <link type="text/css" rel="stylesheet" href="<?php echo $site_url; ?>/static/css/bootstrap.css">
 <link type="text/css" rel="stylesheet" href="<?php echo $site_url; ?>/static/css/admin.css">
+<script type="text/javascript" src="<?php echo $site_url; ?>/static/js/jquery-1.11.1.min.js"></script>
 </head>
 <body>
 
@@ -56,8 +57,6 @@
 			</p>
 		</footer>
 	</div>
-	<script type="text/javascript" src="<?php echo $site_url; ?>/static/js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo $site_url; ?>/static/js/bootstrap.js"></script><!-- Bootstrap Js -->
-
 	</body>
 </html>
