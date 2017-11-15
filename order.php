@@ -59,7 +59,7 @@ try {
 	"callback_uri"=>$site_url.'back.php');
 	
 	$nextpay = new Nextpay_Payment($parameters);
-	//$nextpay->setDefaultVerify(Type_Verify::Http);
+	$nextpay->setDefaultVerify(0);
 	$result = $nextpay->token();
 	if(intval($result->code) == -1){
 		

@@ -36,7 +36,7 @@ $parameters = array
 );
 try {
     $nextpay = new Nextpay_Payment();
-    
+    $nextpay->setDefaultVerify(0);
     $result = $nextpay->verify_request($parameters);
     if( $result < 0 ) {
         message_exit('خطا در عملیات بانکی پرداخت تائید نگردید.');
